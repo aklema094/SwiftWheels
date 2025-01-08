@@ -9,5 +9,25 @@ package swiftwheels;
  * @author user
  */
 public class Hire {
+    private Bike bike;
+    private Customer customer;
+    private int days;
+    
+    Hire(Bike b, Customer c, int d){
+        this.bike = b;
+        this.customer = c;
+        this.days = d;
+    }
+    public Bike getBike(){
+        return bike;
+    }
+    public Customer getCustomer(){
+        return customer;
+    }
+    public int getDays(){
+        return days;
+    }
+    
+    
     
 }
