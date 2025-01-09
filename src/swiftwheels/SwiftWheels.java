@@ -1,20 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package swiftwheels;
 
-/**
- *
- * @author user
- */
 public class SwiftWheels {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        BikeHireSystem bh = new BikeHireSystem();
+        Bike b1 = new Bike("B001", "Kawasaki", "Ninja ZX-10R", 60);
+        Bike b2 = new Bike("B002", "Yamaha", " YZF R1", 70);
+        Bike b3 = new Bike("B003", "Suzuki", "GSX-R1000", 80);
+        bh.addBike(b1);
+        bh.addBike(b2);
+        bh.addBike(b3);
+        bh.menu();
     }
-    
+
 }

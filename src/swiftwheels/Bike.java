@@ -8,12 +8,12 @@ public class Bike {
     private double parDayPrice;
     private boolean isAvailable;
 
-    Bike(String id, String b, String m, double pdp, boolean able) {
+    Bike(String id, String b, String m, double pdp) {
         this.bikeId = id;
         this.brand = b;
         this.model = m;
         this.parDayPrice = pdp;
-        this.isAvailable = able;
+        this.isAvailable = true;
     }
 
     public String getId() {
