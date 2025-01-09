@@ -21,11 +21,11 @@ This is a simple Java-based Bike Hiring System that allows customers to Hire and
 - Represents a customer in the system.
 - Contains attributes such as customer ID and name.
 
-### 3. `Rental`
+### 3. `Hire`
 - Represents a hiring transaction.
 - Contains information about the rented bike, the customer hiring the bike, and the hiring duration (number of days).
 
-### 4. `BikeRentalSystem`
+### 4. `BikeHireSystem`
 - The core class managing the bike rental system.
 - It has lists to store bikes, customers, and hiring.
 - It provides methods for hiring bikes, returning bikes, and displaying available options for the customer.
