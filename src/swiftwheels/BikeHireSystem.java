@@ -104,11 +104,42 @@ public class BikeHireSystem {
                             System.out.println("\nHire canceled.");
                         }
 
-                    }else{
+                    } else {
                         System.out.println("Bike is not Available or Invalid Car Id");
                     }
                     break;
                 case 2:
+                    sc.nextLine();
+                    System.out.println("\n== Return a Bike ==\n");
+                    System.out.print("Enter the car ID you want to return: ");
+                    String Id = sc.nextLine();
+
+                    Bike toReturn = null;
+                    for (Bike bike : bikeList) {
+                        if (bike.getId().equals(Id) && !bike.isAvailable()) {
+                            toReturn = bike;
+                            break;
+                        }
+                    }
+
+                    if (toReturn != null) {
+                        Customer customer = null;
+                        for (Hire ht : hireList) {
+                            if (ht.getBike() == toReturn) {
+                                customer = ht.getCustomer();
+                                break;
+                            }
+                        }
+
+                        if (customer != null) {
+                            returnBike(toReturn);
+                            System.out.println("Bike returned successfully by " + customer.getCustomerName());
+                        } else {
+                            System.out.println("Bike was not Hired or Hired information is missing.");
+                        }
+                    } else {
+                        System.out.println("Invalid Bike ID or Bike is not Hired.");
+                    }
                     break;
                 case 3:
                     System.out.println("Thank for using Swift Wheels");
