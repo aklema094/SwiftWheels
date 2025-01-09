@@ -1,4 +1,4 @@
-# Bike Rental System
+# Swift Wheels
 
 This is a simple Java-based Bike Hiring System that allows customers to Hire and return bikes for a specified number of days. The system provides functionalities for Hiring available bikes, returning rented bikes, and viewing hiring information.
 
